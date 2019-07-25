@@ -4,7 +4,8 @@ const Header = () => (
     <nav className="d-flex row main-nav">
         <div className="col-sm">
         <div className="row logo">
-            <img src="/static/Logo-raios.png" alt="Logo Sol" width="90px" height="60px" />
+            <img className="logo-rosto" src="/static/logo-rosto-0.png" alt="Desenho de crianças estudando" />
+            <img src="/static/logo-raios.png" alt="Logo Sol Luz do Saber" width="193px" height="121px" />
         </div>
         </div>
         <div className="col-sm-8">
@@ -45,9 +46,18 @@ const Header = () => (
         <style jsx>{`
             .main-nav {
                 justify-content: space-around;
+                text-transform: uppercase;
+            }
+            nav > a {
+                padding: 5px;
             }
             .logo {
                 justify-content: center;
+            }
+            .logo-rosto {
+                position: absolute;
+                width: 193px;
+                height: 121px;
             }
             .search-bar {
                 justify-content: center;
