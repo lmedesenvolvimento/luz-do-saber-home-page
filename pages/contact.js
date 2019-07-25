@@ -1,11 +1,12 @@
-import Header from "../components/Header";
+import BaseLayout from "../components/Base-Layout";
 
 export default function Contact() {
     return (
         <div>
-            <Header />
+            <BaseLayout>
 
-            <p>Página de contato</p>
+                <p>Página de contato</p>
+            </BaseLayout>
         </div>
     )
 }

@@ -6344,7 +6344,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/home/rodrigo/Desktop/repos/site-luz-do-saber/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/home/rodrigo/Documentos/Projetos/luz-home-page/.next");
       return error;
     }
   };

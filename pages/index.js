@@ -1,11 +1,12 @@
-import Header from "../components/Header";
+import BaseLayout from '../components/Base-Layout';
 
-const Index = () => (
-    <div>
-        <Header />
-        
-        <p>Luz do Saber Home Page</p>
-    </div>
-);
+export default function Index() {
+    return (
+        <div>
+            <BaseLayout>
 
-export default Index;
+                <p>Teste</p>
+            </BaseLayout>
+        </div>
+    );
+}
