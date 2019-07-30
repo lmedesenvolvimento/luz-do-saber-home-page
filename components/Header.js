@@ -10,10 +10,12 @@ const Header = () => (
         </div>
         <div className="col-sm-8 nav-search">
             <div className="row search-bar">
-                <label className="search-input-container">
+                <div className="search-bar-itens search-input-container box-shadow">
                     <input className="search-input" type="text" name="search" id="search" placeholder="o que você procura?" />
-                </label>
-                <button className="btn btn-light">Entrar</button>
+                </div>
+                <div className="search-bar-itens btn-container box-shadow">
+                    <button className="btn btn-light search-input">Entrar</button>
+                </div>
                 <button className="btn btn-success">Instalar</button>
             </div>
             <div className="row">
@@ -61,23 +63,35 @@ const Header = () => (
                 top: 30px;
             }
 
-            .search-input {
+            .search-bar-itens {
                 position: relative;
-                padding: 0 10px 0 10px;
-                border: 2px solid #DEDEDE;
                 border-radius: 30px;
             }
 
-            .search-input-container::before {
-                content: " ";
+            .search-input-container {
+                width: 228px;
+                height: 40px;
+            }
+
+            .search-input {
                 position: absolute;
-                z-index: -2;
-                top: -6px;
-                left: 18px;
-                right: 192px;
-                bottom: 4px;
+                left: -18px;
+                top: 5px;
+                padding: 1px 10px 1px 10px;
                 border: 1px solid #DEDEDE;
                 border-radius: 30px;
+                outline: none;
+            }
+
+            .search-input:focus {
+                box-shadow: 0 0 0 1px #75C0FF;
+            }
+
+            .box-shadow {
+                -webkit-box-shadow: 0px 11px 6px -6px rgba(0,0,0,0.24);
+                -moz-box-shadow: 0px 11px 6px -6px rgba(0,0,0,0.24);
+                box-shadow: 0px 10px 6px -9px rgba(0,0,0,0.24),
+                            -8px 8px 6px -9px rgba(0,0,0,0.24);
             }
 
             .menu {
@@ -97,19 +111,19 @@ const Header = () => (
 
             .menu li:hover { cursor: pointer; }
 
+            .menu li a { color:#333; text-decoration:none; display:block; }
+
+            .menu .inicio { border-top: 3px solid #FFB151; }
+            .menu .software { border-top: 3px solid #F766AE; }
+            .menu .download { border-top: 3px solid #AE67E0; }
+            .menu .tutorial { border-top: 3px solid #757BFA; }
+            .menu .forum { border-top: 3px solid #75C0FF; }
+            .menu .creditos { border-top: 3px solid #50C0AA; }
+            .menu .contato { border-top: 3px solid #50946D; }
+
             .selected {
                 background: #FFB151;
             }
-
-            .menu li a { color:#333; text-decoration:none; display:block; }
-
-            .menu .inicio { border-top: 5px solid #FFB151; }
-            .menu .software { border-top: 5px solid #F766AE; }
-            .menu .download { border-top: 5px solid #AE67E0; }
-            .menu .tutorial { border-top: 5px solid #757BFA; }
-            .menu .forum { border-top: 5px solid #75C0FF; }
-            .menu .creditos { border-top: 5px solid #50C0AA; }
-            .menu .contato { border-top: 5px solid #50946D; }
 
             .logo-rosto {
                 position: absolute;
