@@ -11,12 +11,14 @@ const Header = () => (
         <div className="col-sm-8 nav-search">
             <div className="row search-bar">
                 <div className="search-bar-itens search-input-container box-shadow">
-                    <input className="search-input" type="text" name="search" id="search" placeholder="o que você procura?" />
+                    <input className="search-input btn-input-font" type="text" name="search" id="search" placeholder="o que você procura?" />
                 </div>
                 <div className="search-bar-itens btn-container box-shadow">
-                    <button className="btn btn-light search-input">Entrar</button>
+                    <button className="btn search-input btn-font-light btn-input-font">Entrar</button>
                 </div>
-                <button className="btn btn-success">Instalar</button>
+                <div className="search-bar-itens btn-container box-shadow">
+                    <button className="btn search-input btn-font-dark btn-input-font">Instalar</button>
+                </div>
             </div>
             <div className="row">
                 <ul className="col-sm menu">
@@ -46,38 +48,43 @@ const Header = () => (
         </div>
 
         <style jsx>{`
+            .btn-input-font {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 0.8em;
+            }
             .main-nav {
                 justify-content: space-around;
                 text-transform: uppercase;
             }
-
             .nav-search {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
             }
-
             .search-bar {
                 position: absolute;
                 right: 70px;
                 top: 30px;
             }
-
             .search-bar-itens {
                 position: relative;
                 border-radius: 30px;
             }
 
+            /* INPUTS */
+
             .search-input-container {
-                width: 228px;
-                height: 40px;
+                width: 248px;
+                height: 35px;
             }
 
             .search-input {
                 position: absolute;
                 left: -18px;
                 top: 5px;
-                padding: 1px 10px 1px 10px;
+                width: 235px;
+                padding: 2px 10px 2px 10px;
                 border: 1px solid #DEDEDE;
                 border-radius: 30px;
                 outline: none;
@@ -87,11 +94,42 @@ const Header = () => (
                 box-shadow: 0 0 0 1px #75C0FF;
             }
 
+            /* FIM INPUTS */
+
+            /* BUTTONS */
+            .btn-container {
+                margin-left: 10px;
+                width: 104px;
+                height: 37px;
+            }
+            .btn {
+                border: 2px solid #5A9F9B;
+                width: 90px;
+            }
+            .btn-font-light {
+                color: #25A19C;
+                border: 2px solid #25A19C;
+            }
+            .btn-font-dark {
+                color: #FFF;
+                border: 2px solid #068783;
+                background: #25A19C;
+            }
+
             .box-shadow {
-                -webkit-box-shadow: 0px 11px 6px -6px rgba(0,0,0,0.24);
-                -moz-box-shadow: 0px 11px 6px -6px rgba(0,0,0,0.24);
-                box-shadow: 0px 10px 6px -9px rgba(0,0,0,0.24),
-                            -8px 8px 6px -9px rgba(0,0,0,0.24);
+                -webkit-box-shadow:
+                    0px 11px 6px -6px rgba(0,0,0,0.24),
+                    -8px 8px 6px -9px rgba(0,0,0,0.24),
+                    8px 8px 6px -9px rgba(0,0,0,0.24),
+                    -6px 0px 11px -5px rgba(0,0,0,0.24);
+                -moz-box-shadow:
+                    0px 11px 6px -6px rgba(0,0,0,0.24),
+                    -8px 8px 6px -9px rgba(0,0,0,0.24),
+                    8px 8px 6px -9px rgba(0,0,0,0.24),
+                    -6px 0px 11px -5px rgba(0,0,0,0.24);
+                box-shadow:
+                    0px 10px 6px -12px rgba(0,0,0,0.24),
+                    -2px 0px 6px -5px rgba(0,0,0,0.24);
             }
 
             .menu {
@@ -113,13 +151,13 @@ const Header = () => (
 
             .menu li a { color:#333; text-decoration:none; display:block; }
 
-            .menu .inicio { border-top: 3px solid #FFB151; }
-            .menu .software { border-top: 3px solid #F766AE; }
-            .menu .download { border-top: 3px solid #AE67E0; }
-            .menu .tutorial { border-top: 3px solid #757BFA; }
-            .menu .forum { border-top: 3px solid #75C0FF; }
-            .menu .creditos { border-top: 3px solid #50C0AA; }
-            .menu .contato { border-top: 3px solid #50946D; }
+            .menu .inicio { border: 1px solid transparent; border-top: 3px solid #FFB151; }
+            .menu .software { border: 1px solid transparent; border-top: 3px solid #F766AE; }
+            .menu .download { border: 1px solid transparent; border-top: 3px solid #AE67E0; }
+            .menu .tutorial { border: 1px solid transparent; border-top: 3px solid #757BFA; }
+            .menu .forum { border: 1px solid transparent; border-top: 3px solid #75C0FF; }
+            .menu .creditos { border: 1px solid transparent; border-top: 3px solid #50C0AA; }
+            .menu .contato { border: 1px solid transparent; border-top: 3px solid #50946D; }
 
             .selected {
                 background: #FFB151;
