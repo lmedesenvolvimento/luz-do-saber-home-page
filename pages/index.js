@@ -11,7 +11,6 @@ export default function Index() {
                         <div className="container">
                             <div className="row banner-content">
                                 <div className="col img-desk">
-                                    {/* <img src="/static/Ilustracao.png" alt="Desenho de crianças estudando" width="418px" height="329px" /> */}
                                     <img src="/static/Ilustracao.png" alt="Desenho de crianças estudando" width="522px" height="411px" />
                                 </div>
 
@@ -70,6 +69,7 @@ export default function Index() {
 
             <style jsx>{`
                 .banner {
+                    font-family: 'Itim', cursive;
                     background: url('/static/BG_bannerCenario.png');
                     height: 588px;
                 }
@@ -85,6 +85,7 @@ export default function Index() {
                     height: 100%;
                 } */}
                 .atividades {
+                    font-family: 'Itim', cursive;
                     padding-top: 588px;
                 }
                 .section-head {

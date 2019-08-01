@@ -58,6 +58,7 @@ const Header = () => (
                 text-transform: uppercase;
             }
             .nav-search {
+                font-family: 'Itim', cursive;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
