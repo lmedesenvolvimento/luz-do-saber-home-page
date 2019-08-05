@@ -5,7 +5,6 @@ export default function Contact() {
         <div>
             <BaseLayout>
 
-                <p>Página de contato</p>
             </BaseLayout>
         </div>
     )
