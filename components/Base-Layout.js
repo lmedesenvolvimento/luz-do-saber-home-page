@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Header from "./Header";
-import Footer from "./Footer"
 
 const BaseLayout = (props) => (
     <main className="container">
@@ -17,9 +16,9 @@ const BaseLayout = (props) => (
 
         <Header />
 
-        { props.children }
-
-        <Footer />
+        <main>
+            {props.children}
+        </main>
     </main>
 );
 

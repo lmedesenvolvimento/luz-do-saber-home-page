@@ -2,10 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    
-}
-
 .full-width {
     width: 100%;
     position: absolute;
@@ -40,8 +36,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .search-input-container {
     width: 248px;
-    height: 35px;
+    height: 40px;
     background: #fff;
+}
+
+.search-input-container-xlarge {
+    width: 508px;
 }
 
 ::placeholder {
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -18px;
     top: 5px;
     width: 235px;
-    padding: 2px 10px 2px 10px;
+    padding: 4px 10px 4px 10px;
     border: 1px solid #DEDEDE;
     border-radius: 30px;
     outline: none;
@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .search-input-large {
     width: 335px;
+}
+
+.search-input-xlarge {
+    width: 495px;
 }
 
 .search-input:focus {
@@ -71,9 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BUTTONS */
 .btn-container {
-    margin-left: 10px;
     width: 104px;
-    height: 37px;
+    height: 42px;
     background: #fff;
 }
 
@@ -93,18 +96,37 @@ h1, h2, h3, h4, h5, h6 {
     background: #25A19C;
 }
 
-.box-shadow {
-    -webkit-box-shadow:
-        0px 11px 6px -6px rgba(0, 0, 0, 0.24),
-        -8px 8px 6px -9px rgba(0, 0, 0, 0.24),
-        8px 8px 6px -9px rgba(0, 0, 0, 0.24),
-        -6px 0px 11px -5px rgba(0, 0, 0, 0.24);
-    -moz-box-shadow:
-        0px 11px 6px -6px rgba(0, 0, 0, 0.24),
-        -8px 8px 6px -9px rgba(0, 0, 0, 0.24),
-        8px 8px 6px -9px rgba(0, 0, 0, 0.24),
-        -6px 0px 11px -5px rgba(0, 0, 0, 0.24);
-    box-shadow:
-        0px 10px 6px -12px rgba(0, 0, 0, 0.24),
-        -2px 0px 6px -5px rgba(0, 0, 0, 0.24);
+.btn-font-orange {
+    color: #ffb248;
+    border: 3px solid #dedede;
+}
+
+/* 
+    BASE BANNER
+*/
+
+.section-text {
+    color: #AEAEAE;
+    font-size: 1.1em;
+}
+.banner {
+    font-family: 'Itim', cursive;
+    background: url('/static/BG_bannerCenario.png');
+    height: 588px;
+}
+.banner-content {
+    height: 588px;
+    align-items: center;
+}
+.banner-left-content {
+    margin-top: 150px;
+}
+.banner-right-content {
+    left: 70px;
+    top: -70px;
+}
+.banner-right-content h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #25a19c;
 }

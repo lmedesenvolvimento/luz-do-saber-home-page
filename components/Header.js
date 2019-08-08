@@ -11,38 +11,38 @@ const Header = () => (
         </div>
         <div className="col-sm-8 nav-search">
             <div className="row search-bar">
-                <div className="search-bar-itens search-input-container box-shadow">
+                <div className="search-bar-itens search-input-container shadow-sm">
                     <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="O QUE VOCÊ PROCURA?" />
                 </div>
-                <div className="search-bar-itens btn-container box-shadow">
+                <div className="search-bar-itens btn-container shadow-sm">
                     <button className="btn search-input btn-font-light form-input-font">Entrar</button>
                 </div>
-                <div className="search-bar-itens btn-container box-shadow">
+                <div className="search-bar-itens btn-container shadow-sm">
                     <button className="btn search-input btn-font-dark form-input-font">Instalar</button>
                 </div>
             </div>
             <div className="row">
                 <ul className="col-sm menu">
                         <Link href="/" passHref>
-                            <li className="inicio selected"> <a>Início</a> </li>
+                            <li className="inicio selected">Início</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="software"> <a>software</a> </li>
+                            <li className="software">software</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="download"> <a>Download</a> </li>
+                            <li className="download">Download</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="tutorial"> <a>Tutorial</a> </li>
+                            <li className="tutorial">Tutorial</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="forum"> <a>Fórum</a> </li>
+                            <li className="forum">Fórum</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="creditos"> <a>Créditos</a> </li>
+                            <li className="creditos">Créditos</li>
                         </Link>
                         <Link href="/contact" passHref>
-                            <li className="contato"> <a>Contato</a> </li>
+                            <li className="contato">Contato</li>
                         </Link>
                 </ul>
             </div>
@@ -89,12 +89,19 @@ const Header = () => (
             .menu li a { color:#333; text-decoration:none; display:block; }
 
             .menu .inicio { border: 1px solid transparent; border-top: 3px solid #FFB151; }
+            .menu .inicio:hover { background: #FFB151; color: #fff; }
             .menu .software { border: 1px solid transparent; border-top: 3px solid #F766AE; }
+            .menu .software:hover { background: #F766AE; color: #fff; }
             .menu .download { border: 1px solid transparent; border-top: 3px solid #AE67E0; }
+            .menu .download:hover { background: #AE67E0; color: #fff; }
             .menu .tutorial { border: 1px solid transparent; border-top: 3px solid #757BFA; }
+            .menu .tutorial:hover { background: #757BFA; color: #fff; }
             .menu .forum { border: 1px solid transparent; border-top: 3px solid #75C0FF; }
+            .menu .forum:hover { background: #75C0FF; color: #fff; }
             .menu .creditos { border: 1px solid transparent; border-top: 3px solid #50C0AA; }
+            .menu .creditos:hover { background: #50C0AA; color: #fff; }
             .menu .contato { border: 1px solid transparent; border-top: 3px solid #50946D; }
+            .menu .contato:hover { background: #50946D; color: #fff; }
 
             .selected {
                 background: #FFB151;
