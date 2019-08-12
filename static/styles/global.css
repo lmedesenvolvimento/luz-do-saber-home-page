@@ -109,22 +109,26 @@ body {
     color: #AEAEAE;
     font-size: 1.1em;
 }
+
 .banner {
     font-family: 'Itim', cursive;
-    background: url('/static/BG_bannerCenario.png');
     height: 588px;
 }
+
 .banner-content {
     height: 588px;
     align-items: center;
 }
+
 .banner-left-content {
     margin-top: 150px;
 }
+
 .banner-right-content {
     left: 70px;
     top: -70px;
 }
+
 .banner-right-content h2 {
     text-transform: uppercase;
     font-weight: bold;
