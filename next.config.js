@@ -1,12 +1,12 @@
 const externalCSS = require('@zeit/next-css')
 module.exports = externalCSS()
 
-const isProd = (process.env.NODE_ENV || 'production') === 'production'
+const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
     exportPathMap: () => ({
         '/': { page: '/' },
-        '/contact': { page: '/contact' }
+        '/contact': { page: '/contact' },
     }),
-    assetPrefix: isProd ? '/luz-do-saber-home-page' : '',
+    assetPrefix: prod ? 'https://rodrigoronin.github.io/luz-do-saber-home-page/' : '',
 }

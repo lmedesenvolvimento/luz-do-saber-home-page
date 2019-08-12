@@ -11,19 +11,19 @@ export default function Index() {
                     <div className="container">
                         <div className="row banner-content">
                             <div className="col banner-left-content">
-                                <img src="/static/Ilustracao.png" alt="Desenho de crianças estudando" width="522px" height="411px" />
+                                <img src="static/Ilustracao.png" alt="Desenho de crianças estudando" width="522px" height="411px" />
                             </div>
 
                             <div className="col banner-right-content">
                                 <h2>Os melhores jogos <br />e atividades para <br />aprender brincando!</h2>
-                                
+
                                 <span className="section-text">Clique no botão abaixo para iniciar</span>
-                                
+
                                 <div className="play-button">
                                     <div>
                                         <div className="outer-card rounded-circle shadow-sm">
                                             <div className="inner-card rounded-circle">
-                                                <a href=""><img src="/static/btn_iniciar.svg" alt="" width="30px;" /></a>
+                                                <a href=""><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
                                             </div>
                                         </div>
 
@@ -44,17 +44,17 @@ export default function Index() {
                     </div>
                     <div className="row">
                         <div className="col atividades-content">
-                            <img src="/static/icon-jogos.png" alt=""/>
+                            <img src="static/icon-jogos.png" alt="" />
                             <p>Jogos <br />Educativos</p>
                             <span className="section-text">Divirta-se e aprenda com jogos como quebra-cabeça, bingo e diversos outros disponíveis!</span>
                         </div>
                         <div className="col atividades-content">
-                            <img src="/static/icon-divertidas.png" alt=""/>
+                            <img src="static/icon-divertidas.png" alt="" />
                             <p>Atividades <br />Divertidas</p>
                             <span className="section-text">Resolva atividades desafiadoras, crie gibis e jornais e teste seus conhecimentos!</span>
                         </div>
                         <div className="col atividades-content">
-                            <img src="/static/icon-personalizadas.png" alt=""/>
+                            <img src="static/icon-personalizadas.png" alt="" />
                             <p>Atividades Personalizadas</p>
                             <span className="section-text">Jogue ou faça as atividades escritas e editadas pelo seu professor!</span>
                         </div>
@@ -67,7 +67,7 @@ export default function Index() {
                             <h4 className="subtitle white-header">Receba nossas novidades!</h4>
                             <span className="newsletter-call">Envie seu e-mail para ficar por dentro de tudo!</span>
                         </div>
-                        
+
                         <div className="row form">
                             <div className="search-bar-itens search-input-container shadow-sm">
                                 <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="ESCREVA SEU NOME" />
@@ -93,7 +93,7 @@ export default function Index() {
                 }
                 .banner {
                     font-family: 'Itim', cursive;
-                    background: url('/static/BG_bannerCenario.png');
+                    background: url('static/BG_bannerCenario.png');
                     height: 588px;
                 }
                 .banner-content {
@@ -183,7 +183,7 @@ export default function Index() {
                 }
                 .news {
                     font-family: 'Itim', cursive;
-                    background: url('/static/bg-news.png');
+                    background: url('static/bg-news.png');
                     height: 280px;
                 }
                 .form {

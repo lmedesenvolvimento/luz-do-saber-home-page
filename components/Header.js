@@ -5,8 +5,8 @@ const Header = () => (
         <div className="col-sm">
         <div className="row logo">
             <h1 className="hidden-title">LUZ DO SABER - PORTAL</h1>
-            <img className="logo-rosto" src="/static/logo-rosto-0.png" alt="Logo Sol Luz do Saber" width="55%" />
-            <img src="/static/logo-raios.png" alt="Logo Sol Luz do Saber" width="55%" />
+            <img className="logo-rosto" src="static/logo-rosto-0.png" alt="Logo Sol Luz do Saber" width="55%" />
+            <img src="static/logo-raios.png" alt="Logo Sol Luz do Saber" width="55%" />
         </div>
         </div>
         <div className="col-sm-8 nav-search">
@@ -23,7 +23,7 @@ const Header = () => (
             </div>
             <div className="row">
                 <ul className="col-sm menu">
-                        <Link href="/" passHref>
+                        <Link href='https://rodrigoronin.github.io/luz-do-saber-home-page/' passHref>
                             <li className="inicio selected">Início</li>
                         </Link>
                         <Link href="/contact" passHref>
@@ -41,7 +41,7 @@ const Header = () => (
                         <Link href="/contact" passHref>
                             <li className="creditos">Créditos</li>
                         </Link>
-                        <Link href="/contact" passHref>
+                        <Link href='https://rodrigoronin.github.io/luz-do-saber-home-page/contact' passHref>
                             <li className="contato">Contato</li>
                         </Link>
                 </ul>
