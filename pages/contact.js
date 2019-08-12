@@ -6,6 +6,10 @@ export default function Contact() {
         <div>
             <BaseLayout>
                 <section className="banner full-width">
+                    <div className="pagination">
+                        <span className="pagination-item">principal</span> <span className="pagination-item">/</span> <span className="pagination-item">contato</span>
+                    </div>
+
                     <div className="container">
                         <div className="row banner-content">
                             <div className="col banner-left-content">
@@ -53,6 +57,27 @@ export default function Contact() {
             </div>
 
             <style jsx>{`
+                .pagination {
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    background: #50946D;
+                    border-radius: 0;
+                    width: 100%;
+                    height: 50px;
+                    padding: 0 90px;
+                    color: #fff;
+                    font-size: 0.8em;
+                    text-transform: uppercase;
+                }
+                .pagination-item {
+                    margin-right: 10px;
+                }
+
+                .banner {
+                    background: url('static/BG_bannerCenario.png');
+                }
+
                 .form-control {
                     outline: 1px solid orange;
                 }

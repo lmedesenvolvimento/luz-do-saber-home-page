@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 .full-width {
     width: 100%;
     position: absolute;

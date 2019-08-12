@@ -23,7 +23,7 @@ export default function Index() {
                                     <div>
                                         <div className="outer-card rounded-circle shadow-sm">
                                             <div className="inner-card rounded-circle">
-                                                <a href=""><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
+                                                <a href="http://luz-do-saber-portal-staging.herokuapp.com/#/" target="_blank"><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
                                             </div>
                                         </div>
 
@@ -94,7 +94,6 @@ export default function Index() {
                 .banner {
                     font-family: 'Itim', cursive;
                     background: url('static/BG_bannerCenario.png');
-                    height: 588px;
                 }
                 .banner-content {
                     height: 588px;
@@ -194,10 +193,10 @@ export default function Index() {
                     margin-left: 20px;
                 }
                 .search-input-container-large {
-                    width: 345px;
+                    width: 347px;
                 }
                 .search-input {
-                    left: 5px;
+                    left: 6px;
                     top: 5px;
                 }
                 .btn-container {

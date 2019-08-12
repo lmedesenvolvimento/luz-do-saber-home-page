@@ -14,18 +14,21 @@ const Header = () => (
                 <div className="search-bar-itens search-input-container shadow-sm">
                     <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="O QUE VOCÊ PROCURA?" />
                 </div>
-                <div className="search-bar-itens btn-container shadow-sm">
+                <form className="search-bar-itens btn-container shadow-sm" action="https://luz-do-saber-staging.herokuapp.com/#/" target="_blank">
                     <button className="btn search-input btn-font-light form-input-font">Entrar</button>
-                </div>
+                </form>
                 <div className="search-bar-itens btn-container shadow-sm">
                     <button className="btn search-input btn-font-dark form-input-font">Instalar</button>
                 </div>
             </div>
             <div className="row">
                 <ul className="col-sm menu">
-                        <Link href='https://rodrigoronin.github.io/luz-do-saber-home-page/' passHref>
+                        <Link href='/' passHref>
                             <li className="inicio selected">Início</li>
                         </Link>
+                        {/* <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-home-page/' passHref>
+                            <li className="inicio selected">Início</li>
+                        </Link> */}
                         <Link href="/contact" passHref>
                             <li className="software">software</li>
                         </Link>
@@ -41,9 +44,12 @@ const Header = () => (
                         <Link href="/contact" passHref>
                             <li className="creditos">Créditos</li>
                         </Link>
-                        <Link href='https://rodrigoronin.github.io/luz-do-saber-home-page/contact' passHref>
+                        <Link href='/contact' passHref>
                             <li className="contato">Contato</li>
                         </Link>
+                        {/* <Link href='https://lmedesenvolvimento.github.io/luz-do-saber-home-page/contact' passHref>
+                            <li className="contato">Contato</li>
+                        </Link> */}
                 </ul>
             </div>
         </div>

@@ -8,5 +8,5 @@ module.exports = {
         '/': { page: '/' },
         '/contact': { page: '/contact' },
     }),
-    assetPrefix: prod ? 'https://rodrigoronin.github.io/luz-do-saber-home-page/' : '',
+    assetPrefix: prod ? 'https://lmedesenvolvimento.github.io/luz-do-saber-home-page/' : '',
 }
