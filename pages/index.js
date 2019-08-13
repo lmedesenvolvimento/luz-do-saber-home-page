@@ -22,7 +22,7 @@ export default function Index() {
                                 <div className="play-button">
                                     <div>
                                         <div className="outer-card rounded-circle shadow-sm">
-                                            <div className="inner-card rounded-circle">
+                                            <div className="inner-card">
                                                 <Link href="http://luz-do-saber-portal-staging.herokuapp.com/#/" passHref>
                                                     <a target="_blank"><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
                                                 </Link>
@@ -137,6 +137,7 @@ export default function Index() {
                     height: 90px;
                     border: 3px solid #CA8C40;
                     background: #ffb248;
+                    border-radius: 50px;
                 }
                 .inner-card > a {
                     padding-left: 3px;
