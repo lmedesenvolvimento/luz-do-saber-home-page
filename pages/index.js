@@ -23,7 +23,9 @@ export default function Index() {
                                     <div>
                                         <div className="outer-card rounded-circle shadow-sm">
                                             <div className="inner-card rounded-circle">
-                                                <a href="http://luz-do-saber-portal-staging.herokuapp.com/#/" target="_blank"><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
+                                                <Link href="http://luz-do-saber-portal-staging.herokuapp.com/#/" passHref>
+                                                    <a target="_blank"><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
+                                                </Link>
                                             </div>
                                         </div>
 
