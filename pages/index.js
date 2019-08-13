@@ -194,14 +194,13 @@ export default function Index() {
                     margin-left: 20px;
                 }
                 .search-input-container-large {
-                    width: 345px;
+                    width: 349px;
                 }
                 .search-input {
-                    left: 5px;
+                    left: 6px;
                     top: 5px;
                 }
                 .btn-container {
-                    margin-left: 10px;
                     width: 101px;
                 }
             `}</style>
