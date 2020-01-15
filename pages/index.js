@@ -7,88 +7,39 @@ export default function Index() {
         <div>
             <BaseLayout>
 
-                <section className="banner full-width">
-                    <div className="container">
-                        <div className="row banner-content">
-                            <div className="col banner-left-content">
-                                <img src="static/Ilustracao.png" alt="Desenho de crianças estudando" width="522px" height="411px" />
-                            </div>
-
-                            <div className="col banner-right-content">
-                                <h2>Os melhores jogos <br />e atividades para <br />aprender brincando!</h2>
-
-                                <span className="section-text">Clique no botão abaixo para iniciar</span>
-
-                                <div className="play-button">
-                                    <div>
-                                        <div className="outer-card rounded-circle shadow-sm">
-                                            <div className="inner-card">
-                                                <Link href="https://eja-luz-do-saber.herokuapp.com/" passHref>
-                                                    <a target="_blank"><img src="static/btn_iniciar.svg" alt="" width="30px;" /></a>
-                                                </Link>
-                                            </div>
-                                        </div>
-
-                                        <div className="search-bar-itens shadow-lg play-card play-card-outer">
-                                            <button className="btn search-input form-input-font btn-font-orange play-card">Iniciar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div className="container-logos">
+                    <div className="fundamental">
+                        <img className="logo-rosto" src="static/logo-raios.png" alt="Logo Sol Luz do Saber" />
+                        <img className="logo-rosto" src="static/logo-rosto-0.png" alt="Logo Sol Luz do Saber" />
                     </div>
-                </section>
-
-                <section className="atividades">
-                    <div className="section-head">
-                        <h4 className="subtitle">O que você vai encontrar?</h4>
-                        <span className="section-text">Veja o que oferecemos para auxiliar o seu aprendizado!</span>
-                    </div>
-                    <div className="row">
-                        <div className="col atividades-content">
-                            <img src="static/icon-jogos.png" alt="" />
-                            <p>Jogos <br />Educativos</p>
-                            <span className="section-text">Divirta-se e aprenda com jogos como quebra-cabeça, bingo e diversos outros disponíveis!</span>
-                        </div>
-                        <div className="col atividades-content">
-                            <img src="static/icon-divertidas.png" alt="" />
-                            <p>Atividades <br />Divertidas</p>
-                            <span className="section-text">Resolva atividades desafiadoras, crie gibis e jornais e teste seus conhecimentos!</span>
-                        </div>
-                        <div className="col atividades-content">
-                            <img src="static/icon-personalizadas.png" alt="" />
-                            <p>Atividades Personalizadas</p>
-                            <span className="section-text">Jogue ou faça as atividades escritas e editadas pelo seu professor!</span>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="news full-width">
-                    <div className="container">
-                        <div className="section-head">
-                            <h4 className="subtitle white-header">Receba nossas novidades!</h4>
-                            <span className="newsletter-call">Envie seu e-mail para ficar por dentro de tudo!</span>
-                        </div>
-
-                        <div className="row form">
-                            <div className="search-bar-itens search-input-container shadow-sm">
-                                <input className="search-input form-input-font" type="text" name="search" id="search" placeholder="ESCREVA SEU NOME" />
-                            </div>
-                            <div className="search-bar-itens search-input-container search-input-container-large shadow-sm">
-                                <input className="search-input search-input-large form-input-font" type="text" name="search" id="search" placeholder="ESCREVA SEU E-MAIL" />
-                            </div>
-                            <div className="search-bar-itens btn-container shadow-sm">
-                                <button className="btn search-input btn-font-dark form-input-font">Enviar</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <Footer />
+                    
+                    <img className="logo-eja" src="static/logo_eja.png" alt="Logo Sol Luz do Saber" />
+                </div>
 
             </BaseLayout>
 
             <style jsx>{`
+                .container-logos {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    height: 400px;
+                    margin-top: 15%;
+                }
+                .fundamental {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    width: 400px;
+                }
+                .logo-rosto {
+                    position: absolute;
+                    width: 400px;
+                }
+                .logo-eja {
+                    width: 400px;
+                }
                 .section-text {
                     color: #AEAEAE;
                     font-size: 1.1em;
