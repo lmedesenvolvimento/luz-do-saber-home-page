@@ -5,8 +5,8 @@ const Header = () => (
         <div className="col-sm">
         <div className="row logo">
             <h1 className="hidden-title">LUZ DO SABER - PORTAL</h1>
-            <img className="logo-rosto" src="static/logo-rosto-0.png" alt="Logo Sol Luz do Saber" width="55%" />
-            <img src="static/logo-raios.png" alt="Logo Sol Luz do Saber" width="55%" />
+            <img className="logo-rosto" src="static/logo_eja.png" alt="Logo Sol Luz do Saber" width="55%" />
+            {/* <img src="static/logo-raios.png" alt="Logo Sol Luz do Saber" width="55%" /> */}
         </div>
         </div>
         <div className="col-sm-8 nav-search">
@@ -114,7 +114,7 @@ const Header = () => (
             }
 
             .logo-rosto {
-                position: absolute;
+                padding: 20px 0;
             }
 
             input, button {
