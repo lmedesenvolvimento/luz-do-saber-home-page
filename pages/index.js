@@ -9,11 +9,21 @@ export default function Index() {
 
                 <div className="container-logos">
                     <div className="fundamental">
-                        <img className="logo-rosto" src="static/logo-raios.png" alt="Logo Sol Luz do Saber" />
-                        <img className="logo-rosto" src="static/logo-rosto-0.png" alt="Logo Sol Luz do Saber" />
+                        <Link href='https://fundamental.luzdosaber.virtual.ufc.br' passHref>
+                            <a target="_blank">
+                                <img className="logo-rosto" src="static/logo-raios.png" alt="Logo Sol Luz do Saber" />
+                                <img className="logo-rosto" src="static/logo-rosto-0.png" alt="Logo Sol Luz do Saber" />
+                            </a>
+                        </Link>
                     </div>
-                    
-                    <img className="logo-eja" src="static/logo_eja.png" alt="Logo Sol Luz do Saber" />
+
+                    <div className="eja">
+                        <Link href='https://eja.luzdosaber.virtual.ufc.br' passHref>
+                            <a target="_blank">
+                                <img className="logo-eja" src="static/logo_eja.png" alt="Logo Sol Luz do Saber" />
+                            </a>
+                        </Link>
+                    </div>
                 </div>
 
             </BaseLayout>
@@ -23,22 +33,44 @@ export default function Index() {
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
-                    height: 400px;
-                    margin-top: 15%;
+                    flex-wrap: wrap;
+                    height: 100vh;
                 }
                 .fundamental {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    border-radius: 15px;
+                    border-top: 1px solid #dedede;
+                    border-right: 1px solid #dedede;
                     position: relative;
-                    width: 400px;
+                    width: 25em;
+                    height: 18em;
+
+                    -webkit-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
+                    box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
                 }
                 .logo-rosto {
                     position: absolute;
                     width: 400px;
+                    max-width: 100%;
+                }
+                .eja {
+                    border-radius: 15px;
+                    border-top: 1px solid #dedede;
+                    border-right: 1px solid #dedede;
+                    position: relative;
+                    width: 25em;
+                    height: 18em;
+                    padding: 15px;
+
+                    -webkit-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
+                    box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
                 }
                 .logo-eja {
+                    position: relative;
                     width: 400px;
+                    max-width: 100%;
+                    top: 25px;
                 }
                 .section-text {
                     color: #AEAEAE;
