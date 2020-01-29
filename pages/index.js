@@ -7,187 +7,125 @@ export default function Index() {
         <div>
             <BaseLayout>
 
-                <div className="container-logos">
-                    <div className="fundamental">
-                        <Link href='https://fundamental.luzdosaber.virtual.ufc.br' passHref>
-                            <a target="_blank">
-                                <img className="logo-rosto" src="static/logo-raios.png" alt="Logo Sol Luz do Saber" />
-                                <img className="logo-rosto" src="static/logo-rosto-0.png" alt="Logo Sol Luz do Saber" />
-                            </a>
-                        </Link>
+                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                    <ol className="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <div className="textura"></div>
+                            <div className="fundamental row">
+                                <div className="item-card col-md-4">
+                                    <Link href='http://fundamental.eja.luzdosaber.virtual.ufc.br/' passHref>
+                                        <a target="_blank">
+                                            <img className="card-image" src="static/card-fundamental.png" alt=""/>
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div className="text-card col-md-6">
+                                    <h2>Os melhores jogos e <br /> atividades para crianças <br /> aprenderem brincando!</h2>
+                                    <p>Clique no botão abaixo para saber mais</p>
+                                    <button className="btn-text-card">Acessar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="carousel-item">
+                            <div className="textura"></div>
+                            <div className="fundamental row">
+                                <div className="item-card col-md-4">
+                                    <Link href='http://app.eja.luzdosaber.virtual.ufc.br/' passHref>
+                                        <a target="_blank">
+                                            <img className="card-image" src="static/card-eja.png" alt=""/>
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div className="text-card col-md-6">
+                                    <h2>Os melhores jogos e <br /> atividades para crianças <br /> aprenderem brincando!</h2>
+                                    <p>Clique no botão abaixo para saber mais</p>
+                                    <button className="btn-text-card">Acessar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div className="eja">
-                        <Link href='https://eja.luzdosaber.virtual.ufc.br' passHref>
-                            <a target="_blank">
-                                <img className="logo-eja" src="static/logo_eja.png" alt="Logo Sol Luz do Saber" />
-                            </a>
-                        </Link>
-                    </div>
+                    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
                 </div>
 
             </BaseLayout>
 
             <style jsx>{`
-                .container-logos {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-                    height: 100vh;
+                .carousel-inner {
+                    background: linear-gradient(to right, rgba(36, 198, 220), rgba(80, 75, 157));
+                }
+                .carousel-item {
+                    
+                    background-size: cover;
+                    width: 100%;
+                    height: 840px;
+                    padding-top: 105px;
+                }
+                .textura {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.25;
+                    background: url('static/textura.png');
+                    background-size: cover;
                 }
                 .fundamental {
-                    border-radius: 15px;
-                    border-top: 1px solid #dedede;
-                    border-right: 1px solid #dedede;
-                    position: relative;
-                    width: 25em;
-                    height: 18em;
-
-                    -webkit-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
-                    -moz-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
-                    box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
-                }
-                .logo-rosto {
-                    position: absolute;
-                    width: 400px;
-                    max-width: 100%;
-                }
-                .eja {
-                    border-radius: 15px;
-                    border-top: 1px solid #dedede;
-                    border-right: 1px solid #dedede;
-                    position: relative;
-                    width: 25em;
-                    height: 18em;
-                    padding: 15px;
-
-                    -webkit-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
-                    -moz-box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
-                    box-shadow: -10px 10px 19px -5px rgba(0,0,0,0.75);
-                }
-                .logo-eja {
-                    position: relative;
-                    width: 400px;
-                    max-width: 100%;
-                    top: 25px;
-                }
-                .section-text {
-                    color: #AEAEAE;
-                    font-size: 1.1em;
-                }
-                .banner {
-                    font-family: 'Itim', cursive;
-                    background: url('static/BG_bannerCenario.png');
-                }
-                .banner-content {
-                    height: 588px;
+                    display: flex;
                     align-items: center;
+                    justify-content: center;
                 }
-                .banner-left-content {
-                    margin-top: 150px;
+                .item-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
-                .banner-right-content {
-                    left: 70px;
-                    top: -70px;
+                .card-image {
+                    -webkit-box-shadow: 0px 28px 34px 2px rgba(0,0,0,0.8);
+                    -moz-box-shadow: 0px 28px 34px 2px rgba(0,0,0,0.8);
+                    box-shadow: 0px 28px 34px 2px rgba(0,0,0,0.8);
                 }
-                .banner-right-content h2 {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    color: #25a19c;
-                }
-                .play-button {
-                    position: relative;
-                    top: 20px;
-                    left: -20px;
+                .card-image:hover {
+                    -webkit-box-shadow: 0px 20px 25px -2px #f97f08;
+                    -moz-box-shadow: 0px 20px 25px -2px #f97f08;
+                    box-shadow: 0px 20px 25px -2px #f97f08;
+
                     cursor: pointer;
                 }
-                .outer-card {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    z-index: 2;
-                    width: 100px;
-                    height: 100px;
-                    background: #fff;
+                .text-card {
+                    text-align: center;
                 }
-                .inner-card {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 90px;
-                    height: 90px;
-                    border: 3px solid #CA8C40;
-                    background: #ffb248;
+                .text-card > h2 {
+                    font-size: 3.5em;
+                    color: #fff;
+                    padding-bottom: 25px;
+                }
+                .text-card > p {
+                    font-size: 1.5em;
+                    color: #fff;
+                    opacity: 0.6;
+                    padding-bottom: 25px;
+                }
+                .btn-text-card {
+                    font-size: 2em;
+                    text-transform: uppercase;
+                    color: #02a29d;
+                    padding: 20px 100px;
                     border-radius: 50px;
                 }
-                .inner-card > a {
-                    padding-left: 3px;
-                }
-                .play-card {
-                    position: absolute;
-                    left: 70px;
-                    top: 17px;
-                    width: 150px;
-                    height: 60px;
-                    border-radius: 20px;
-                    font-size: 1.2em;
-                }
-                .play-card-outer {
-                    width: 160px;
-                    height: 70px;
-                }
-                .atividades {
-                    position: relative;
-                    font-family: 'Itim', cursive;
-                    padding-top: 588px;
-                }
-                .section-head {
-                    text-align: center;
-                    padding-top: 50px;
-                }
-                .white-header {
-                    color: #fff;
-                }
-                .newsletter-call {
-                    font-size: 1.5em;
-                    color: #ffeac1;
-                }
-                .atividades-content {
-                    text-align: center;
-                    padding: 60px;
-                }
-                .atividades-content > img {
-                    margin-bottom: 25px;
-                }
-                .atividades-content > p {
-                    font-size: 1.6em;
-                    font-weight: bold;
-                    color: #555555;
-                }
-                .news {
-                    font-family: 'Itim', cursive;
-                    background: url('static/bg-news.png');
-                    height: 280px;
-                }
-                .form {
-                    justify-content: center;
-                    padding: 50px;
-                }
-                .search-input-container {
-                    margin-left: 20px;
-                }
-                .search-input-container-large {
-                    width: 349px;
-                }
-                .search-input {
-                    left: 6px;
-                    top: 5px;
-                }
-                .btn-container {
-                    width: 101px;
-                }
+                
             `}</style>
         </div>
     );

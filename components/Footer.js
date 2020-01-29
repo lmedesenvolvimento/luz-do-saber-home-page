@@ -1,40 +1,34 @@
 const Footer = () => (
     <footer className="footer full-width">
-        <div className="row display-content social-icons">
-            <ul>
-                <li><a href=""><img src="static/icone_google_reader.svg" alt="" /></a></li>
-                <li><a href=""><img src="static/icone_twitter.svg" alt="" /></a></li>
-                <li><a href=""><img src="static/icone_youtube.svg" alt="" /></a></li>
-                <li><a href=""><img src="static/icone_facebook.svg" alt="" /></a></li>
-            </ul>
-        </div>
         
         <div className="row display-content">
-            <img src="static/realizacao_logos.svg" alt=""/>
+            <img src="static/realizacao_logos.png" alt=""/>
         </div>
 
-        <span className="copyright"><a href="">Termos de uso e política de privacidade</a> | &#169; 2019 Luz do Saber. Todos os direitos reservados.</span>
+        {/* <span className="copyright"><a href="">Termos de uso e política de privacidade</a> | &#169; 2019 Luz do Saber. Todos os direitos reservados.</span> */}
 
         <style jsx>{`
             .footer {
                 font-family: 'Itim', cursive;
-                margin-top: 280px;
                 text-align: center;
+                background: url('static/textura.png'),
+                            rgba(255, 255, 255, 0.8);
+                background-size: cover;
             }
 
             .display-content {
                 display: flex;
                 justify-content: center;
-                padding-bottom: 20px;
+                padding: 40px;
+            }
+
+            .display-content > img {
+                width: 70%;
             }
 
             ul li {
                 display: inline-block;
                 padding: 5px;
-            }
-
-            .social-icons {
-                margin-top: 30px;
             }
 
             .copyright {
