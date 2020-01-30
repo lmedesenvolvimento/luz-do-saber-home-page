@@ -11,23 +11,22 @@ export default function Index() {
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <div className="textura"></div>
                             <div className="fundamental row">
                                 <div className="item-card col-md-4">
-                                    <Link href='http://fundamental.eja.luzdosaber.virtual.ufc.br/' passHref>
-                                        <a target="_blank">
-                                            <img className="card-image" src="static/card-fundamental.png" alt=""/>
-                                        </a>
-                                    </Link>
+                                    <img className="card-image" src="static/card-fundamental.png" alt=""/>
                                 </div>
                                 <div className="text-card col-md-6">
                                     <h2>Os melhores jogos e <br /> atividades para crianças <br /> aprenderem brincando!</h2>
                                     <p>Clique no botão abaixo para saber mais</p>
-                                    <button className="btn-text-card">Acessar</button>
+                                    <Link href='http://fundamental.luzdosaber.virtual.ufc.br/' passHref>
+                                        <a target="_blank">
+                                            <button className="btn-text-card">Acessar</button>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -35,16 +34,16 @@ export default function Index() {
                             <div className="textura"></div>
                             <div className="fundamental row">
                                 <div className="item-card col-md-4">
-                                    <Link href='http://app.eja.luzdosaber.virtual.ufc.br/' passHref>
-                                        <a target="_blank">
-                                            <img className="card-image" src="static/card-eja.png" alt=""/>
-                                        </a>
-                                    </Link>
+                                    <img className="card-image" src="static/card-eja.png" alt=""/>
                                 </div>
                                 <div className="text-card col-md-6">
                                     <h2>Os melhores jogos e <br /> atividades para crianças <br /> aprenderem brincando!</h2>
                                     <p>Clique no botão abaixo para saber mais</p>
-                                    <button className="btn-text-card">Acessar</button>
+                                    <Link href='http://eja.luzdosaber.virtual.ufc.br/' passHref>
+                                        <a target="_blank">
+                                            <button className="btn-text-card">Acessar</button>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -71,6 +70,16 @@ export default function Index() {
                     width: 100%;
                     height: 840px;
                     padding-top: 105px;
+                }
+                .carousel-control-next-icon,
+                .carousel-control-prev-icon {
+                    width: 60px;
+                    height: 60px;
+                }
+                .carousel-indicators li {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
                 }
                 .textura {
                     position: absolute;
@@ -119,11 +128,25 @@ export default function Index() {
                     padding-bottom: 25px;
                 }
                 .btn-text-card {
+                    position: relative;
                     font-size: 2em;
                     text-transform: uppercase;
                     color: #02a29d;
                     padding: 20px 100px;
+                    border: none;
                     border-radius: 50px;
+                    background: #fff;
+                }
+                .btn-text-card::before {
+                    content: '';
+                    position: absolute;
+                    background: rgba(0, 0, 0, 0);
+                    bottom: 4%;
+                    left: 2%;
+                    width: 96%;
+                    height: 90%;
+                    border: 5px solid #cad3dd;
+                    border-radius: 40px;
                 }
                 
             `}</style>
