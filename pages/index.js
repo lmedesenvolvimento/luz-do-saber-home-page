@@ -17,7 +17,11 @@ export default function Index() {
                             <div className="textura"></div>
                             <div className="fundamental row">
                                 <div className="item-card col-md-4">
-                                    <img className="card-image" src="static/card-fundamental.png" alt=""/>
+                                    <Link href='http://fundamental.luzdosaber.virtual.ufc.br/' passHref>
+                                        <a target="_blank">
+                                            <img className="card-image" src="static/card-fundamental.png" alt=""/>
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="text-card col-md-6">
                                     <h2>Os melhores jogos e <br /> atividades para crianças <br /> aprenderem brincando!</h2>
@@ -34,7 +38,11 @@ export default function Index() {
                             <div className="textura"></div>
                             <div className="fundamental row">
                                 <div className="item-card col-md-4">
-                                    <img className="card-image" src="static/card-eja.png" alt=""/>
+                                    <Link href='http://eja.luzdosaber.virtual.ufc.br/' passHref>
+                                        <a target="_blank">
+                                            <img className="card-image" src="static/card-eja.png" alt=""/>
+                                        </a>
+                                    </Link>
                                 </div>
                                 <div className="text-card col-md-6">
                                     <h2>Os melhores jogos e <br /> atividades para crianças <br /> aprenderem brincando!</h2>
@@ -102,22 +110,21 @@ export default function Index() {
                     justify-content: center;
                 }
                 .card-image {
+                    max-width: 100%;
+                    margin-bottom: 20px;
+
                     -webkit-box-shadow: 0px 28px 34px 2px rgba(0,0,0,0.8);
                     -moz-box-shadow: 0px 28px 34px 2px rgba(0,0,0,0.8);
                     box-shadow: 0px 28px 34px 2px rgba(0,0,0,0.8);
                 }
                 .card-image:hover {
-                    -webkit-box-shadow: 0px 20px 25px -2px #f97f08;
-                    -moz-box-shadow: 0px 20px 25px -2px #f97f08;
-                    box-shadow: 0px 20px 25px -2px #f97f08;
-
                     cursor: pointer;
                 }
                 .text-card {
                     text-align: center;
                 }
                 .text-card > h2 {
-                    font-size: 3.5em;
+                    font-size: 3em;
                     color: #fff;
                     padding-bottom: 25px;
                 }
@@ -132,7 +139,8 @@ export default function Index() {
                     font-size: 2em;
                     text-transform: uppercase;
                     color: #02a29d;
-                    padding: 20px 100px;
+                    padding: 20px 0;
+                    width: 50%;
                     border: none;
                     border-radius: 50px;
                     background: #fff;
@@ -147,6 +155,28 @@ export default function Index() {
                     height: 90%;
                     border: 5px solid #cad3dd;
                     border-radius: 40px;
+                }
+                .btn-text-card {
+                    font-size: 1.5em;
+                }
+
+                @media (max-width: 767px) {
+                    .item-card {
+                        width: 400px;
+                        padding: 20px;
+                    }
+                    .text-card > h2 {
+                        display: none;
+                    }
+                    .btn-text-card {
+                        font-size: 1.2em;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 992px) {
+                    .text-card > h2 {
+                        font-size: 2em;
+                    }
                 }
                 
             `}</style>
