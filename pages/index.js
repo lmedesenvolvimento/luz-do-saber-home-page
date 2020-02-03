@@ -73,11 +73,9 @@ export default function Index() {
                     background: linear-gradient(to right, rgba(36, 198, 220), rgba(80, 75, 157));
                 }
                 .carousel-item {
-                    
                     background-size: cover;
-                    width: 100%;
-                    height: 840px;
-                    padding-top: 105px;
+                    height: 760px;
+                    padding: 5%;
                 }
                 .carousel-control-next-icon,
                 .carousel-control-prev-icon {
@@ -95,9 +93,9 @@ export default function Index() {
                     top: 0;
                     width: 100%;
                     height: 100%;
-                    opacity: 0.25;
                     background: url('static/textura.png');
                     background-size: cover;
+                    opacity: 0.25;
                 }
                 .fundamental {
                     display: flex;
@@ -161,6 +159,9 @@ export default function Index() {
                 }
 
                 @media (max-width: 767px) {
+                    .carousel-item {
+                        height: 770px;
+                    }
                     .item-card {
                         width: 400px;
                         padding: 20px;
@@ -176,6 +177,9 @@ export default function Index() {
                 @media (min-width: 768px) and (max-width: 992px) {
                     .text-card > h2 {
                         font-size: 2em;
+                    }
+                    .carousel-item {
+                        height: 600px;
                     }
                 }
                 
