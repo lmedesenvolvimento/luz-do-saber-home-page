@@ -45,7 +45,7 @@ export default function Index() {
                                     </Link>
                                 </div>
                                 <div className="text-card col-md-6">
-                                    <h2>Os melhores jogos e <br /> atividades para crianças <br /> aprenderem brincando!</h2>
+                                    <h2>Atividades, jogos e exercícios <br /> de alfabetização e letramento <br /> para jovens e adultos!</h2>
                                     <p>Clique no botão abaixo para saber mais</p>
                                     <Link href='http://eja.luzdosaber.virtual.ufc.br/' passHref>
                                         <a target="_blank">
