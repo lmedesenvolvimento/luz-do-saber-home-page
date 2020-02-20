@@ -12,6 +12,9 @@ const Footer = () => (
                 <img className="logo" src="static/ufc.png" alt="" />
             </div>
             <div>
+                <img className="logo" src="static/cientista-chefe-azul.png" alt="" />
+            </div>
+            <div>
                 <img className="logo" src="static/governo.png" alt="" />
             </div>
             <div>
