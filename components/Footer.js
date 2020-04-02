@@ -1,28 +1,42 @@
 const Footer = () => (
     <footer className="footer full-width">
-        
+
         <div className="row display-content">
-            <div>
-                <img className="logo" src="static/lme.png" alt="" />
-            </div>
-            <div>
-                <img className="logo" src="static/ufc-virtual.png" alt="" />
-            </div>
-            <div>
-                <img className="logo" src="static/ufc.png" alt="" />
-            </div>
-            <div>
-                <img className="logo" src="static/cientista-chefe-azul.png" alt="" />
-            </div>
-            <div>
-                <img className="logo" src="static/governo.png" alt="" />
-            </div>
-            <div>
-                <img className="logo" src="static/prefeitura.png" alt="" />
-            </div>
-            <div>
-                <img className="logo funcap" src="static/funcap.png" alt="" />
-            </div>
+            <a href="http://lme.ufc.br/" target="_blank">
+              <div>
+                  <img className="logo" src="static/lme.png" alt="" />
+              </div>
+            </a>
+            <a href="http://portal.virtual.ufc.br/" target="_blank">
+              <div>
+                  <img className="logo" src="static/ufc-virtual.png" alt="" />
+              </div>
+            </a>
+            <a href="http://www.ufc.br/" target="_blank">
+              <div>
+                  <img className="logo" src="static/ufc.png" alt="" />
+              </div>
+            </a>
+            <a href="https://www.funcap.ce.gov.br/programas-de-auxilio/programa-cientista-chefe/" target="_blank">
+              <div>
+                  <img className="logo" src="static/cientista-chefe-azul.png" alt="" />
+              </div>
+            </a>
+            <a href="https://www.ceara.gov.br/" target="_blank">
+              <div>
+                  <img className="logo" src="static/governo.png" alt="" />
+              </div>
+            </a>
+            <a href="https://www.fortaleza.ce.gov.br/" target="_blank">
+              <div>
+                  <img className="logo" src="static/prefeitura.png" alt="" />
+              </div>
+            </a>
+            <a href="https://www.funcap.ce.gov.br/" target="_blank">
+              <div>
+                  <img className="logo funcap" src="static/funcap.png" alt="" />
+              </div>
+            </a>
         </div>
 
         {/* <span className="copyright"><a href="">Termos de uso e política de privacidade</a> | &#169; 2019 Luz do Saber. Todos os direitos reservados.</span> */}
@@ -40,8 +54,8 @@ const Footer = () => (
                 align-items: center;
                 padding-bottom: 20px;
             }
-            .display-content > div {
-                margin-left: 30px;
+            .display-content  a {
+                margin-left: 15px;
                 margin-right: 30px;
             }
             div > img {
